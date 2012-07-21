@@ -1,0 +1,19 @@
+<?php
+/**
+  *  Codejugglers - Block
+  */
+function cj_link_block_info() {
+  $blocks['cj_link'] = array(
+    'info' => t('Codejugglers Link Block'),
+    'cache' => DRUPAL_CACHE_PER_ROLE,
+  );
+return $blocks;
+}
+
+function cj_link_block_view($delta = '') {
+  // $block['subject'] = t("Codejugglers");
+  $block['content'] = t('Hosting and administration by <a href="http://codejugglers.nl">Codejugglers</a>. Powered by <a href="http://drupal.org">Drupal</a>.');
+  return $block;
+}
+
+?>

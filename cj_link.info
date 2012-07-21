@@ -1,0 +1,8 @@
+; \$Id\$
+name = "Codejugglers Link"
+description = "Voegt een link naar de Codejugglers website toe."
+core = 7.x
+version = 1.x
+package = Codejugglers
+dependencies[] = block
+configure = admin/config/codejugglers/link
